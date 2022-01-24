@@ -24,6 +24,8 @@ def products(request,cat_id):
     context = {'pd_list':pd_list,}
     return HttpResponse(template.render(context, request))
 def order(request,pd_id):
+    if not request.user:
+        return HttpResponse('<h1>Iltimos Ro\'yxatdan o\'ting</h1>')
     try:
         customer = Customer.objects.get(user=request.user)
         pd = Products.objects.get(id=pd_id)
