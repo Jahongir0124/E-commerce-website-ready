@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+.loader {
+    position: fixed;
+    background: rgb(78, 73, 73);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+    transition: all .8s ease;
+}
+header { 
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 15px 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 888;
+    background: #000;
+}
+
+header .brend {
+    color:rgb(255, 249, 249);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .8s ease;
+}
+header .navbar_a {
+    position: relative;
+}
+header .brend:hover {
+    opacity: 0.6;
+}
+header .navbar_a a{
+    margin-left: 30px;
+    text-decoration: none;
+    color:rgb(255, 249, 249);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.8s ease;
+}
+header .navbar_a a:hover{
+    opacity: 0.7;
+}
+.menu_button {
+    display: none;
+}
+.navbar_a i {
+    display: none;
+}
+ section {
+    padding: 100px;
+    
+}
+.category-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text-category {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    position: inherit;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    height: 120px;
+    bottom: 10px;
+    margin-bottom: 0;
+}
+footer span {
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500; 
+} 
+
+
+.conteiner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    height: 400px;
+    width: 280px;
+    border: 2px solid #000;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.image {
+   
+    width: 100%;
+    height: 170px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.card h2 {
+    
+    display: inline-block;  
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.card p {
+  
+    
+    margin: 10px 0; 
+}
+.card h3 {
+    display: inline-block;  
+}
+.btn {
+   
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 4px;
+    background:#000;
+    color: #ffff;
+}
+.card:hover {
+    background: rgb(143, 129, 129);
+}
+@media only screen and (max-width: 650px ) {
+    .card {
+        height: 200px;
+        width: 150px;
+        border: 2px solid #000;
+        margin: 8px;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    .image {
+        width: 100%;
+        height: 50px;
+       
+        margin-bottom: 8px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .card h2 {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+    .card h3 {
+        font-size: 9px;
+    }
+    .card p {
+        padding: 5px 0;
+        font-size: 9px;
+    }
+    .btn {
+        display: inline-block;   
+        padding: 3px 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 4px;
+        background:#000;
+        color: #fff;
+        margin: 6px 0;
+        font-size: 12px;
+        
+    }
+    .card:hover {
+        background: rgb(143, 129, 129);
+    }
+    .navbar_a   {
+        display: none;
+    }
+    header {
+        padding: 12px 20px;
+    }
+    .menu_button {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        right: 2rem;
+        
+    }
+    header .navbar_a.active {
+        position: fixed;
+        z-index: 888;
+        top: 0;
+        right: 0;
+        width: 440px;
+        height: 100%;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: rgba(0,0,0,0.2);
+        transition: all .4s ease;
+        
+    }
+    .navbar_a a{
+        font-size: 24px;
+        padding: 0.9rem 0;
+    }
+    #close {
+        position: inherit;
+        font-size: 30px;
+        z-index: 999;
+        color: #fff;
+        top: 10px;
+        right: 2rem;  
+        cursor: pointer;
+
+    }
+    header .brend {
+        color:rgb(255, 249, 249);
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .main .content{
+        position: relative;
+        display: inline-block;}
+       
+       
+
+
+}
+.up-btn.active {
+    position: fixed;
+    right: 10px;
+    bottom: 8px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .9s ease;
+}
+.up-btn i {
+     color: #fff;
+     font-size: 30px;
+     cursor: pointer;
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+.lds-hourglass:after {
+content: " ";
+display: block;
+border-radius: 50%;
+width: 0;
+height: 0;
+margin: 8px;
+box-sizing: border-box;
+border: 32px solid #fff;
+border-color: #fff transparent #fff transparent;
+animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+100% {
+    transform: rotate(1800deg);
+}
+}
+.btn-a {
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-top: 12px;
+}
+  
